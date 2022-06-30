@@ -1,16 +1,16 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "https://raw.githubusercontent.com/kenryuS/kenryuS/main/README.md",
+  "title": "kenryuS@LiveTerm",
+  "name": "Kenryu Shibata",
+  "ascii": "kenryuS",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "kenryuS",
+    "twitter": "KenS1045"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
+  "email": "kenryushibata@gmail.com",
+  "ps1_hostname": "kenryuS-liveterm",
   "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
+  "repo": "https://github.com/kenryuS",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
   "donate_urls": {
     "paypal": "https://paypal.me/cveinnt",
