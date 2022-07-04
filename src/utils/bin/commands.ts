@@ -97,10 +97,17 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `Here is my little secrets:
-  
-  I am such a power user of Linux.
-  I HATE to use many propriety softwares.`;
+  if (args[0] === `secrets/`) {
+    return `
+    Here are my secrets:
+
+    I HATE to use most of the Propriety Softwares.
+    `;
+  } else {
+    return `
+    secrets/
+    `;
+  }
 };
 
 export const cd = async (args: string[]): Promise<string> => {
