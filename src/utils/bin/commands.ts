@@ -99,13 +99,14 @@ export const whoami = async (args: string[]): Promise<string> => {
 export const ls = async (args: string[]): Promise<string> => {
   if (args[0] === `secrets/`) {
     return `
-    Here are my secrets:
+Here are my secrets:
 
-    I HATE to use most of the Propriety Softwares.
+I HATE to use most of the Propriety Softwares.
+I'm using Linux for ALL of the Task; web browsing, gaming, and of-course programming.
     `;
   } else {
     return `
-    secrets/
+secrets/
     `;
   }
 };
@@ -143,14 +144,20 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+
+  ██     ██ ███████ ██       ██████  ██████  ███    ███ ███████     ████████  ██████                    
+  ██     ██ ██      ██      ██      ██    ██ ████  ████ ██             ██    ██    ██                   
+  ██  █  ██ █████   ██      ██      ██    ██ ██ ████ ██ █████          ██    ██    ██                   
+  ██ ███ ██ ██      ██      ██      ██    ██ ██  ██  ██ ██             ██    ██    ██                   
+   ███ ███  ███████ ███████  ██████  ██████  ██      ██ ███████        ██     ██████                    
+                                                                                                        
+                                                                                                        
+  ██   ██ ███████ ███    ██ ██████  ██    ██ ██    ██ ███████       ████████ ███████ ██████  ███    ███ 
+  ██  ██  ██      ████   ██ ██   ██  ██  ██  ██    ██ ██               ██    ██      ██   ██ ████  ████ 
+  █████   █████   ██ ██  ██ ██████    ████   ██    ██ ███████ █████    ██    █████   ██████  ██ ████ ██ 
+  ██  ██  ██      ██  ██ ██ ██   ██    ██    ██    ██      ██          ██    ██      ██   ██ ██  ██  ██ 
+  ██   ██ ███████ ██   ████ ██   ██    ██     ██████  ███████          ██    ███████ ██   ██ ██      ██ 
+                                                                                                        
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
