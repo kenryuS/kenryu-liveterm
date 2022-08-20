@@ -97,14 +97,21 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  if (args[0] === `secrets/`) {
+    if (args[0] === `-l`) {
+        return `
+total 1
+drwxrwxr-x 1 kenryuS kenryuS 4096 July 4 21:42 secrets
+		`;
+	} else if ((args[0] === `secrets`) || (args[0] === `secrets/`)) {
     return `
 Here are my secrets:
 
 I HATE to use most of the Propriety Softwares.
 I'm using Linux for ALL of the Task; web browsing, gaming, and of-course programming.
     `;
-  } else {
+    } else if (args[0]){
+        return `No Directory named "` + args[0] + `" found`;
+    } else {
     return `
 secrets/
     `;
@@ -120,20 +127,8 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
-};
-
 export const vim = async (args: string[]): Promise<string> => {
   return `'vim' is so outdated. how about 'nvim'?`;
-};
-
-export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
-};
-
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
