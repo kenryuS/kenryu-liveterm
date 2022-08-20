@@ -100,14 +100,14 @@ export const ls = async (args: string[]): Promise<string> => {
     if (args[0] === `-l`) {
         return `
 total 1
-drwxrwxr-x 1 kenryuS kenryuS 4096 July 4 21:42 secrets
+drwxrwxr-x 1 kenryuS kenryuS 4096 August 19 21:43 secrets
 		`;
 	} else if ((args[0] === `secrets`) || (args[0] === `secrets/`)) {
     return `
 Here are my secrets:
 
 I HATE to use most of the Propriety Softwares.
-I'm using Linux for ALL of the Task; web browsing, gaming, and of-course programming.
+I'm using Linux for ALL of the Tasks; web browsing, gaming, and of-course programming.
     `;
     } else if (args[0]){
         return `No Directory named "` + args[0] + `" found`;
@@ -119,8 +119,7 @@ secrets/
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+  return `unfortunately, this command is under-construction.`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
