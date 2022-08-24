@@ -17,6 +17,7 @@
 .DS_Store
 *.pem
 LiveTerm.workspace
+/.codelite/
 
 # debug
 npm-debug.log*
