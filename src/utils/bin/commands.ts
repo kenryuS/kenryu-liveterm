@@ -130,6 +130,14 @@ export const vim = async (args: string[]): Promise<string> => {
   return `'vim' is so outdated. how about 'nvim'?`;
 };
 
+export const nvim = async (args: string[]): Promise<string> => {
+  return `It's same as 'vim' bruh ()`;
+};
+
+export const acpi = async (args: string[]): Promise<string> => {
+  return `Battery 0: Unlimited, +Inf %, I won't stop!`
+};
+
 export const sudo = async (args?: string[]): Promise<string> => {
   window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
   return `Permission denied: with little power comes... no responsibility? `;

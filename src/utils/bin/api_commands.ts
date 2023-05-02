@@ -10,7 +10,7 @@ export const projects = async (args: string[]): Promise<string> => {
   return projects
     .map(
       (repo) =>
-        `${repo.name} - <a class="text-light-blue dark:text-dark-blue underline" href="${repo.html_url}" target="_blank">${repo.html_url}</a>`,
+        `${repo.name} - <a class="text-light-blue dark:text-dark-blue no-underline hover:underline decoration-red-500" href="${repo.html_url}" target="_blank">${repo.html_url}</a>`,
     )
     .join('\n');
 };
@@ -32,5 +32,5 @@ export const weather = async (args: string[]): Promise<string> => {
     return 'Usage: weather [city]. Example: weather casablanca';
   }
   const weather = await getWeather(city);
-  return weather;
+  return `Getting Forcast...\n${weather}`;
 };
